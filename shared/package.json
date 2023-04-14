@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "peerDependencies": {
+    "mongoose": "^7.0.3"
+  }
+}
