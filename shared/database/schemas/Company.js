@@ -3,7 +3,7 @@ import productSchema from "./Product.js";
 
 const companySchema = new Schema({
 	name: String,
-	products: [productSchema]
+	products: new Schema([productSchema])
 });
 
 export default companySchema;
