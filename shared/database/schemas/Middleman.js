@@ -1,7 +1,7 @@
-import { Schema } from "mongoose";
+import Mongoose from "mongoose";
 import productSchema from "./Product.js";
 
-const middlemanSchema = new Schema({
+const middlemanSchema = new Mongoose.Schema({
 	name: String,
 	products: [productSchema]
 });

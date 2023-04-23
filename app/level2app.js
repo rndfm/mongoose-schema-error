@@ -1,10 +1,9 @@
-import { connect, model } from "mongoose";
-
+import Mongoose from "mongoose";
 import companySchema from "../shared/database/schemas/CompanyWithMiddleman.js";
 
-connect("mongodb://127.0.0.1:27017/test");
+Mongoose.connect("mongodb://127.0.0.1:27017/test");
 
-const Company = model("companiesWithMiddleman", companySchema);
+const Company = Mongoose.model("companiesWithMiddleman", companySchema);
 
 const company = new Company({
     name: 'Microsoft',
